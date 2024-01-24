@@ -1,0 +1,36 @@
+{
+	"schemaVersion": 1,
+	"id": "britishrail",
+	"version": "${version}",
+	"name": "britishrail",
+	"description": "britishrail",
+	"authors": [
+		"polserull"
+	],
+	"contact": {
+		"homepage": "https://github.com/polserull/british-rail",
+		"sources": "https://github.com/polserull/british-rail"
+	},
+	"license": "GPLv2",
+	"icon": "icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"gb.polserull.britishrail.fabric.MainFabric"
+		],
+		"client": [
+			"gb.polserull.britishrail.fabric.MainFabricClient"
+		],
+		"modmenu": [
+			"gb.polserull.britishrail.fabric.ModMenuApiImpl"
+		]
+	},
+	"mixins": [
+		"britishrail.mixins.json"
+	],
+	"depends": {
+		"fabric": "*",
+		"minecraft": "*",
+		"mtr": "*"
+	}
+}
