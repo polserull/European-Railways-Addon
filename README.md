@@ -10,6 +10,4 @@
    3. Sync the Gradle Project again
 
 
-![Visitor Count](https://profile-counter.glitch.me/polserull/count.svg)
-
 
