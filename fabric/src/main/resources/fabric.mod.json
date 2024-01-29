@@ -17,13 +17,13 @@
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"gb.polserull.britishrail.fabric.MainFabric"
+			"gb.polserull.europeanrail.fabric.MainFabric"
 		],
 		"client": [
-			"gb.polserull.britishrail.fabric.MainFabricClient"
+			"gb.polserull.europeanrail.fabric.MainFabricClient"
 		],
 		"modmenu": [
-			"gb.polserull.britishrail.fabric.ModMenuApiImpl"
+			"gb.polserull.europeanrail.fabric.ModMenuApiImpl"
 		]
 	},
 	"mixins": [

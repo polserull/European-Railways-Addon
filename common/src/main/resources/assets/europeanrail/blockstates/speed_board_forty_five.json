@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "europeanrail:block/speed_board_forty_five"
+    },
+    "facing=east": {
+      "model": "europeanrail:block/speed_board_forty_five",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "europeanrail:block/speed_board_forty_five",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "europeanrail:block/speed_board_forty_five",
+      "y": 270
+    }
+
+  }
+}

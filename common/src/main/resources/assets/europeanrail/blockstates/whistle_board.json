@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "europeanrail:block/whistle_board"
+    },
+    "facing=east": {
+      "model": "europeanrail:block/whistle_board",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "europeanrail:block/whistle_board",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "europeanrail:block/whistle_board",
+      "y": 270
+    }
+
+  }
+}

@@ -74,26 +74,26 @@ task setupFiles() {
 
 	download {
 		src "https://github.com/jonafanho/Minecraft-Mappings/archive/refs/heads/${is_1_19_3 ? minecraft_version : "1." + minecraft_main_version}.zip"
-		dest "common/src/main/java/gb/polserull/britishrail/mappings/files.zip"
+		dest "common/src/main/java/gb/polserull/europeanrail/mappings/files.zip"
 		overwrite true
 	}
 
 	copy {
 		outputs.upToDateWhen { false }
-		from(zipTree("common/src/main/java/gb/polserull/britishrail/mappings/files.zip")) { eachFile { file -> file.relativePath = new RelativePath(true, file.relativePath.segments.drop(1) as String[]) } }
-		into "common/src/main/java/gb/polserull/britishrail/mappings"
-		filter(ReplaceTokens, tokens: ["package": "gb.polserull.britishrail.mappings; import mtr.mappings.*"])
+		from(zipTree("common/src/main/java/gb/polserull/europeanrail/mappings/files.zip")) { eachFile { file -> file.relativePath = new RelativePath(true, file.relativePath.segments.drop(1) as String[]) } }
+		into "common/src/main/java/gb/polserull/europeanrail/mappings"
+		filter(ReplaceTokens, tokens: ["package": "gb.polserull.europeanrail.mappings; import mtr.mappings.*"])
 	}
 
-	ant.path { ant.fileset(dir: "common/src/main/java/gb/polserull/britishrail/mappings", includes: "Fabric*.java") }.list().each {
-		ant.move(file: it, todir: "fabric/src/main/java/gb/polserull/britishrail/mappings")
+	ant.path { ant.fileset(dir: "common/src/main/java/gb/polserull/europeanrail/mappings", includes: "Fabric*.java") }.list().each {
+		ant.move(file: it, todir: "fabric/src/main/java/gb/polserull/europeanrail/mappings")
 	}
 
-	ant.path { ant.fileset(dir: "common/src/main/java/gb/polserull/britishrail/mappings", includes: "Forge*.java") }.list().each {
-		ant.move(file: it, todir: "forge/src/main/java/gb/polserull/britishrail/mappings")
+	ant.path { ant.fileset(dir: "common/src/main/java/gb/polserull/europeanrail/mappings", includes: "Forge*.java") }.list().each {
+		ant.move(file: it, todir: "forge/src/main/java/gb/polserull/europeanrail/mappings")
 	}
 
-	ant.delete(dir: "common/src/main/java/gb/polserull/britishrail/mappings")
+	ant.delete(dir: "common/src/main/java/gb/polserull/europeanrail/mappings")
 
 	copy {
 		outputs.upToDateWhen { false }
@@ -109,7 +109,7 @@ task setupFiles() {
 
 	copy {
 		outputs.upToDateWhen { false }
-		from "common/src/main/latest-britishrail-addon.json"
+		from "common/src/main/latest-eu-addon.json"
 		into "build/latest"
 		filter(ReplaceTokens, tokens: ["version": rootProject.mod_version])
 	}
