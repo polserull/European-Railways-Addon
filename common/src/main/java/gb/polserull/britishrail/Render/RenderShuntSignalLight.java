@@ -25,7 +25,7 @@ public class RenderShuntSignalLight<T extends mtr.mappings.BlockEntityMapper> ex
 		final float x = occupiedAspect > 0 == redOnTop ? -0.30F : 0.15F;
 		IDrawing.drawTexture(matrices, vertexConsumer, x, y, -0.45F, x + 0.1875F, y + 0.1875F, -0.45F, Direction.NORTH, occupiedAspect > 0 ? 0xFFFF0000 : 0xFFFFFFFF, MAX_LIGHT_GLOWING);
 		final float yy = occupiedAspect > 0 == redOnTop ? 0.59F : 0.24F;
-		final float xx = occupiedAspect > 0 == redOnTop ? -0.05F : -0.30F;
+		final float xx = occupiedAspect > 0 == redOnTop ? -0F : -0.30F;
 		IDrawing.drawTexture(matrices, vertexConsumer, xx, yy, -0.45F, xx + 0.1875F, yy + 0.1875F, -0.45F, Direction.NORTH, occupiedAspect > 0 ? 0xFFFF0000 : 0xFFFFFFFF, MAX_LIGHT_GLOWING);
 	}
 }

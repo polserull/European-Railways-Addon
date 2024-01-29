@@ -3,11 +3,19 @@ package gb.polserull.britishrail.Blocks;
 import mtr.block.BlockSignalLightBase;
 import mtr.block.IBlock;
 import gb.polserull.britishrail.MyBlockEntityTypes;
+import mtr.mappings.Text;
+import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.Style;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+
+import java.util.List;
 
 public class ShuntSignal extends BlockSignalLightBase {
 	public ShuntSignal(Properties settings) {
@@ -22,6 +30,11 @@ public class ShuntSignal extends BlockSignalLightBase {
 	@Override
 	public mtr.mappings.BlockEntityMapper createBlockEntity(BlockPos pos, BlockState state) {
 		return new TileEntityTunnelSignalLight1(pos, state);
+	}
+
+	@Override
+	public void appendHoverText(ItemStack itemStack, BlockGetter blockGetter, List<Component> tooltip, TooltipFlag tooltipFlag) {
+		tooltip.add(Text.translatable("tooltip.shunt_signal").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)));
 	}
 
 	public static class TileEntityTunnelSignalLight1 extends mtr.mappings.BlockEntityMapper {

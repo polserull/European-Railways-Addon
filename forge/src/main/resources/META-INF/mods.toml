@@ -9,7 +9,7 @@ version = "${version}"
 displayName = "britishrail"
 displayURL = "https://github.com/polserull/british-rail/"
 
-authors = "polserull"
+authors = "polserull, szandorthe13th"
 description = "britishrail"
 logoFile = "icon.png"
 

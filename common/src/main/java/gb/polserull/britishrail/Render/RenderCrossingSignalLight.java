@@ -6,17 +6,21 @@ import com.mojang.blaze3d.vertex.VertexConsumer;
 import mtr.client.IDrawing;
 import mtr.mappings.BlockEntityMapper;
 import mtr.mappings.Utilities;
+import mtr.render.MoreRenderLayers;
 import mtr.render.RenderSignalBase;
+import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.blockentity.BlockEntityRenderDispatcher;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.LightLayer;
 import net.minecraft.world.level.block.state.BlockState;
 
-public class RenderCrossingSignalLight<T extends BlockEntityMapper> extends RenderSignalBase<T> {
+public class RenderCrossingSignalLight<T extends BlockEntityMapper> extends testrender<T> {
 
 	final boolean redOnTop;
 	final int proceedColor;

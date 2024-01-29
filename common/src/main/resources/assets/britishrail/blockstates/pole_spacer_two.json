@@ -1,0 +1,39 @@
+{
+	"multipart": [
+		{
+			"when": {
+				"facing": "north"
+			},
+			"apply": {
+				"model": "britishrail:block/pole_spacers/pole_spacer_two"
+			}
+		},
+		{
+			"when": {
+				"facing": "east"
+			},
+			"apply": {
+				"model": "britishrail:block/pole_spacers/pole_spacer_two",
+				"y": 90
+			}
+		},
+		{
+			"when": {
+				"facing": "south"
+			},
+			"apply": {
+				"model": "britishrail:block/pole_spacers/pole_spacer_two",
+				"y": 180
+			}
+		},
+		{
+			"when": {
+				"facing": "west"
+			},
+			"apply": {
+				"model": "britishrail:block/pole_spacers/pole_spacer_two",
+				"y": 270
+			}
+		}
+	]
+}
