@@ -25,7 +25,7 @@ public class RenderOFFSignal<T extends BlockSignalSemaphoreBase.TileEntitySignal
         matrices.translate(0.250, 0.525, 0.200);
         if (world != null) {
             final BlockPos pos = entity.getBlockPos();
-            final VertexConsumer vertexConsumer2 = vertexConsumers.getBuffer(MoreRenderLayers.getExterior(new ResourceLocation("britishrail:textures/block/theatre/off_dispatch.png")));
+            final VertexConsumer vertexConsumer2 = vertexConsumers.getBuffer(MoreRenderLayers.getExterior(new ResourceLocation("europeanrail:textures/block/theatre/off_dispatch.png")));
             IDrawing.drawTexture(matrices, vertexConsumer2, -0.705F, -0.5F, -0.13375F, 0.295F, 0.5F, -0.13375F, facing.getOpposite(), ARGB_WHITE, MAX_LIGHT_GLOWING);
         }
     }

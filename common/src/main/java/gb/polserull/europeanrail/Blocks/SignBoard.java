@@ -10,6 +10,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
@@ -27,11 +28,13 @@ public class SignBoard extends BlockDirectionalMapper {
 	@Nullable
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
-		return defaultBlockState().setValue(FACING, blockPlaceContext.getHorizontalDirection().getOpposite().getClockWise());
+		return defaultBlockState().setValue(FACING, blockPlaceContext.getHorizontalDirection().getOpposite());
 	}
 
 	@Override
 	public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-		return IBlock.getVoxelShapeByDirection(0.01, 0.01, 0.01, 16, 16, 16, IBlock.getStatePropertySafe(blockState, FACING));
+		VoxelShape i1 =  IBlock.getVoxelShapeByDirection(6, 0, 6, 10, 16, 10, IBlock.getStatePropertySafe(blockState, FACING));
+		VoxelShape i2 =  IBlock.getVoxelShapeByDirection(0, 0, 5, 16, 16, 6, IBlock.getStatePropertySafe(blockState, FACING));
+		return Shapes.or(i1, i2);
 	}
 }

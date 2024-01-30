@@ -14,6 +14,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.List;
@@ -36,7 +37,8 @@ public class OFFDispatcherSignal extends BlockSignalSemaphoreBase {
 
     @Override
     public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-        return IBlock.getVoxelShapeByDirection(0.01, 0.01, 0.01, 6, 6, 6, IBlock.getStatePropertySafe(blockState, FACING));
+        VoxelShape i1 = IBlock.getVoxelShapeByDirection(2, 6, 0, 14, 16, 10, IBlock.getStatePropertySafe(blockState, FACING));
+        return Shapes.or(i1);
     }
 
 
