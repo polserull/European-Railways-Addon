@@ -1,5 +1,5 @@
 # European Railway Addon
-https://img.shields.io/modrinth/game-versions/:projectId
+
 
 ## Setup
 
