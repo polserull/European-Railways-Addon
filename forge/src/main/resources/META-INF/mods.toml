@@ -1,16 +1,16 @@
 modLoader = "javafml"
 loaderVersion = "[36,)"
-license = "GPLv2"
-issueTrackerURL="https://github.com/polserull/british-rail/issues"
+license = "MIT"
+issueTrackerURL="https://github.com/polserull/European-Railways-Addon/issues"
 
 [[mods]]
-modId = "britishrail"
+modId = "europeanrail"
 version = "${version}"
-displayName = "britishrail"
-displayURL = "https://github.com/polserull/british-rail/"
+displayName = "European Railways Addon"
+displayURL = "https://modrinth.com/mod/european-railways-addon"
 
-authors = "polserull, szandorthe13th"
-description = "britishrail"
+authors = "[Creator] pølserull, [Support] szandorthe13th"
+description = "A MTR Addon thats various blocks and mechanics from european railways!"
 logoFile = "icon.png"
 
 displayTest = "IGNORE_ALL_VERSION"
