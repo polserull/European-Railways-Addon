@@ -15,6 +15,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import org.jetbrains.annotations.Nullable;
 
@@ -22,11 +23,8 @@ import java.util.List;
 
 public class NormalSigns extends BlockDirectionalMapper {
 
-	public final String tooltipID;
-
-	public NormalSigns(Properties settings, String tooltipID) {
+	public NormalSigns(Properties settings) {
 		super(settings);
-		this.tooltipID = tooltipID;
 	}
 
 	@Override
@@ -37,16 +35,13 @@ public class NormalSigns extends BlockDirectionalMapper {
 	@Nullable
 	@Override
 	public BlockState getStateForPlacement(BlockPlaceContext blockPlaceContext) {
-		return defaultBlockState().setValue(FACING, blockPlaceContext.getHorizontalDirection().getOpposite().getClockWise());
+		return defaultBlockState().setValue(FACING, blockPlaceContext.getHorizontalDirection().getOpposite());
 	}
 
 	@Override
-	public void appendHoverText(ItemStack itemStack, BlockGetter blockGetter, List<Component> tooltip, TooltipFlag tooltipFlag) {
-		tooltip.add(Text.translatable(tooltipID).setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)));
-	}
-
-	@Override
-	public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
-		return IBlock.getVoxelShapeByDirection(0.01, 0.01, 0.01, 16, 16, 16, IBlock.getStatePropertySafe(blockState, FACING));
+	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
+		VoxelShape i1 =  IBlock.getVoxelShapeByDirection(6, 0, 6, 10, 16, 10, IBlock.getStatePropertySafe(state, FACING));
+		VoxelShape i2 =  IBlock.getVoxelShapeByDirection(3, 5, 5, 13, 15, 6, IBlock.getStatePropertySafe(state, FACING));
+		return Shapes.or(i1, i2);
 	}
 }

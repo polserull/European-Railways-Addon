@@ -1,3 +1,6 @@
 {
-	"parent": "europeanrail:block/limit_of_shunt_signal"
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "europeanrail:item/limit_of_shunt"
+	}
 }

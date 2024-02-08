@@ -5,7 +5,7 @@
 	"textures": {
 		"1": "europeanrail:block/cbtc_block_marker",
 		"2": "europeanrail:block/metal",
-		"particle": "europeanrail:block/cbtc_block_marker"
+		"particle": "europeanrail:block/metal"
 	},
 	"elements": [
 		{

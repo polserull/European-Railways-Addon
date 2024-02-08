@@ -43,11 +43,6 @@ public class CrossingSignal extends BlockSignalLightBase {
 		return new TileEntityTunnelSignalLight1(pos, state);
 	}
 
-	@Override
-	public void appendHoverText(ItemStack itemStack, BlockGetter blockGetter, List<Component> tooltip, TooltipFlag tooltipFlag) {
-		tooltip.add(Text.translatable("tooltip.crossing_signal").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)));
-	}
-
 	public static class TileEntityTunnelSignalLight1 extends mtr.mappings.BlockEntityMapper {
 
 		public TileEntityTunnelSignalLight1(BlockPos pos, BlockState state) {

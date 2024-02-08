@@ -5,7 +5,7 @@
 	"textures": {
 		"0": "europeanrail:block/crossing_signal",
 		"1": "europeanrail:block/metal",
-		"particle": "europeanrail:block/crossing_signal"
+		"particle": "europeanrail:block/black_concrete"
 	},
 	"elements": [
 		{

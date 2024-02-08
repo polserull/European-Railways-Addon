@@ -4,7 +4,7 @@
 	"textures": {
 		"1": "europeanrail:block/signal_type_sign_auto",
 		"2": "europeanrail:block/metal",
-		"particle": "europeanrail:block/signal_type_sign_auto"
+		"particle": "europeanrail:block/meta"
 	},
 	"elements": [
 		{

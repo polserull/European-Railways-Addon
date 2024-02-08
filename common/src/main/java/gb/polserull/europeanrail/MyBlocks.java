@@ -52,15 +52,15 @@ public interface MyBlocks {
 
     // Signs
     RegistryObject<Block> WHISTLE_BOARD = new RegistryObject<>(() -> new SignBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
-    RegistryObject<Block> ADVANCED_CROSSING_SIGN = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1), "tooltip.advanced_crossing_sign"));
-    RegistryObject<Block> OVERHEAD_NEUTRAL_SECTION = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1),"tooltip.overhead_neutral"));
-    RegistryObject<Block> OVERHEAD_NEUTRAL_SECTION_END = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1), "tooltip.overhead_neutral_end"));
-    RegistryObject<Block> CBTC_BLOCK_MARKER = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1), "tooltip.cbtc_block"));
-    RegistryObject<Block> AWS_CANCEL_SIGN = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1), "tooltip.aws_cancel"));
-    RegistryObject<Block> CHANGE_CURRENT_COLLECTION_SIGN = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1), "tooltip.change_current_coll"));
-    RegistryObject<Block> SPEEDBOARD_ARROW_BOTH = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1), "tooltip.none"));
-    RegistryObject<Block> SPEEDBOARD_ARROW_LEFT = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1), "tooltip.none"));
-    RegistryObject<Block> SPEEDBOARD_ARROW_RIGHT = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1), "tooltip.none"));
+    RegistryObject<Block> ADVANCED_CROSSING_SIGN = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
+    RegistryObject<Block> OVERHEAD_NEUTRAL_SECTION = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
+    RegistryObject<Block> OVERHEAD_NEUTRAL_SECTION_END = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
+    RegistryObject<Block> CBTC_BLOCK_MARKER = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
+    RegistryObject<Block> AWS_CANCEL_SIGN = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
+    RegistryObject<Block> CHANGE_CURRENT_COLLECTION_SIGN = new RegistryObject<>(() -> new NormalSigns(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
+    RegistryObject<Block> SPEEDBOARD_ARROW_BOTH = new RegistryObject<>(() -> new ArrowBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
+    RegistryObject<Block> SPEEDBOARD_ARROW_LEFT = new RegistryObject<>(() -> new ArrowBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
+    RegistryObject<Block> SPEEDBOARD_ARROW_RIGHT = new RegistryObject<>(() -> new ArrowBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
 
     // Ticket Barrier Blocks
     //RegistryObject<Block> BR_TICKET_BARRIER_ENTRANCE = new RegistryObject<>(() -> new BRTicketBarrier(true));

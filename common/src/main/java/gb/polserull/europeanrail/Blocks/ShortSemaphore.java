@@ -26,11 +26,6 @@ public class ShortSemaphore extends BlockSignalSemaphoreBase {
         return new TileEntitySignalSemaphoreShort (pos, state);
     }
 
-    @Override
-    public void appendHoverText(ItemStack itemStack, BlockGetter blockGetter, List<Component> tooltip, TooltipFlag tooltipFlag) {
-        tooltip.add(Text.translatable("tooltip.short_semaphore").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)));
-    }
-
     public static class TileEntitySignalSemaphoreShort extends TileEntitySignalSemaphoreBase {
 
         public TileEntitySignalSemaphoreShort(BlockPos pos, BlockState state) {

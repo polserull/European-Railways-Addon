@@ -13,6 +13,7 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 import java.util.List;
@@ -24,17 +25,14 @@ public class LimitOfShuntSignal extends BlockSignalLightBase {
 
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
-		return IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 16, 16, IBlock.getStatePropertySafe(state, FACING));
+		VoxelShape i1 =  IBlock.getVoxelShapeByDirection(6, 0, 6, 10, 16, 10, IBlock.getStatePropertySafe(state, FACING));
+		VoxelShape i2 =  IBlock.getVoxelShapeByDirection(1, 2, 10, 15, 14, 14, IBlock.getStatePropertySafe(state, FACING));
+		return Shapes.or(i1, i2);
 	}
 
 	@Override
 	public mtr.mappings.BlockEntityMapper createBlockEntity(BlockPos pos, BlockState state) {
 		return new TileEntityTunnelSignalLight1(pos, state);
-	}
-
-	@Override
-	public void appendHoverText(ItemStack itemStack, BlockGetter blockGetter, List<Component> tooltip, TooltipFlag tooltipFlag) {
-		tooltip.add(Text.translatable("tooltip.limit_shunt").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)));
 	}
 
 	public static class TileEntityTunnelSignalLight1 extends mtr.mappings.BlockEntityMapper {

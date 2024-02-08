@@ -31,11 +31,6 @@ public class OFFDispatcherSignal extends BlockSignalSemaphoreBase {
     }
 
     @Override
-    public void appendHoverText(ItemStack itemStack, BlockGetter blockGetter, List<Component> tooltip, TooltipFlag tooltipFlag) {
-        tooltip.add(Text.translatable("tooltip.off_signal").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)));
-    }
-
-    @Override
     public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos blockPos, CollisionContext collisionContext) {
         VoxelShape i1 = IBlock.getVoxelShapeByDirection(2, 6, 0, 14, 16, 10, IBlock.getStatePropertySafe(blockState, FACING));
         return Shapes.or(i1);

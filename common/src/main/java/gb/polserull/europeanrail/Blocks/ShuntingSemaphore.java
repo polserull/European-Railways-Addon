@@ -26,11 +26,6 @@ public class ShuntingSemaphore extends BlockSignalSemaphoreBase {
         return new TileEntitySignalSemaphoreShunt(pos, state);
     }
 
-    @Override
-    public void appendHoverText(ItemStack itemStack, BlockGetter blockGetter, List<Component> tooltip, TooltipFlag tooltipFlag) {
-        tooltip.add(Text.translatable("tooltip.shunting_semaphore").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)));
-    }
-
     public static class TileEntitySignalSemaphoreShunt extends TileEntitySignalSemaphoreBase {
 
         public TileEntitySignalSemaphoreShunt(BlockPos pos, BlockState state) {

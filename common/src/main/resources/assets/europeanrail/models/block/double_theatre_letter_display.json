@@ -2,7 +2,8 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [64, 64],
 	"textures": {
-		"2": "europeanrail:block/double_thearte_letter_display"
+		"2": "europeanrail:block/double_thearte_letter_display",
+		"particle" : "europeanrail:block/black_concrete"
 	},
 	"elements": [
 		{

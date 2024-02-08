@@ -4,7 +4,7 @@
 	"textures": {
 		"1": "europeanrail:block/no_telephone_sign",
 		"2": "europeanrail:block/metal",
-		"particle": "europeanrail:block/no_telephone_sign"
+		"particle": "europeanrail:block/meta"
 	},
 	"elements": [
 		{

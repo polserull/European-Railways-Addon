@@ -1,6 +1,6 @@
 {
 	"parent": "item/generated",
 	"textures": {
-		"layer0": "europeanrail:item/shunt"
+		"layer0": "europeanrail:item/shunt_semaphore"
 	}
 }

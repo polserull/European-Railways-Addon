@@ -26,11 +26,6 @@ public class CautionSemaphore extends BlockSignalSemaphoreBase {
         return new TileEntitySignalSemaphoreCaut(pos, state);
     }
 
-    @Override
-    public void appendHoverText(ItemStack itemStack, BlockGetter blockGetter, List<Component> tooltip, TooltipFlag tooltipFlag) {
-        tooltip.add(Text.translatable("tooltip.caution_semaphore").setStyle(Style.EMPTY.withColor(ChatFormatting.GRAY)));
-    }
-
     public static class TileEntitySignalSemaphoreCaut extends BlockSignalSemaphoreBase.TileEntitySignalSemaphoreBase {
 
         public TileEntitySignalSemaphoreCaut(BlockPos pos, BlockState state) {
