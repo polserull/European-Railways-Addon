@@ -32,20 +32,17 @@ public class CrossingSignal extends BlockSignalLightBase {
 
 	@Override
 	public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
-		VoxelShape i1 =  IBlock.getVoxelShapeByDirection(6, 0, 6, 10, 16, 10, IBlock.getStatePropertySafe(blockState, FACING));
-		VoxelShape i2 =  IBlock.getVoxelShapeByDirection(10, 0, -4, 12, 16, 20, IBlock.getStatePropertySafe(blockState, FACING));
-		VoxelShape i3 =  IBlock.getVoxelShapeByDirection(12, 0, -6, 13, 16, 22, IBlock.getStatePropertySafe(blockState, FACING));
-		return Shapes.or(i1, i2, i3);
+		return IBlock.getVoxelShapeByDirection(0, 0, 0, 16, 16, 16, IBlock.getStatePropertySafe(blockState, FACING));
 	}
 
 	@Override
 	public mtr.mappings.BlockEntityMapper createBlockEntity(BlockPos pos, BlockState state) {
-		return new TileEntityTunnelSignalLight1(pos, state);
+		return new TileEntityCrossingSignal(pos, state);
 	}
 
-	public static class TileEntityTunnelSignalLight1 extends mtr.mappings.BlockEntityMapper {
+	public static class TileEntityCrossingSignal extends mtr.mappings.BlockEntityMapper {
 
-		public TileEntityTunnelSignalLight1(BlockPos pos, BlockState state) {
+		public TileEntityCrossingSignal(BlockPos pos, BlockState state) {
 			super(MyBlockEntityTypes.CROSSING_SIGNAL.get(), pos, state);
 		}
 	}

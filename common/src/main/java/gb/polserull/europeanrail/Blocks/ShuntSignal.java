@@ -32,12 +32,12 @@ public class ShuntSignal extends BlockSignalLightBase {
 
 	@Override
 	public mtr.mappings.BlockEntityMapper createBlockEntity(BlockPos pos, BlockState state) {
-		return new TileEntityTunnelSignalLight1(pos, state);
+		return new TileEntitySignalShunt(pos, state);
 	}
 
-	public static class TileEntityTunnelSignalLight1 extends mtr.mappings.BlockEntityMapper {
+	public static class TileEntitySignalShunt extends mtr.mappings.BlockEntityMapper {
 
-		public TileEntityTunnelSignalLight1(BlockPos pos, BlockState state) {
+		public TileEntitySignalShunt(BlockPos pos, BlockState state) {
 			super(MyBlockEntityTypes.SHUNT_SIGNAL.get(), pos, state);
 		}
 	}
