@@ -64,9 +64,9 @@ public class RenderCrossingSignalLight<T extends BlockEntityMapper> extends test
 			float blinkZ2 = -0.40F;
 
 			if (currentTime % 1000 < 500) {
-				IDrawing.drawTexture(matrices, vertexConsumer, blinkX1, blinkY1, blinkZ1, blinkX1 + 0.1875F, blinkY1 + 0.1875F, blinkZ1 + 0.0001F, facing.getOpposite(), isRedLight1Active ? 0xFFFF0000 : 0, MAX_LIGHT_GLOWING);
+				IDrawing.drawTexture(matrices, vertexConsumer, blinkX1, blinkY1, blinkZ1, blinkX1 + 0.1875F, blinkY1 + 0.1875F, blinkZ1 + 0.0001F, facing, isRedLight1Active ? 0xFFFF0000 : 0, MAX_LIGHT_GLOWING);
 			} else {
-				IDrawing.drawTexture(matrices, vertexConsumer, blinkX2, blinkY2, blinkZ2, blinkX2 + 0.1875F, blinkY2 + 0.1875F, blinkZ2 + 0.0001F, facing.getOpposite(), isRedLight1Active ? 0xFFFF0000 : 0, MAX_LIGHT_GLOWING);
+				IDrawing.drawTexture(matrices, vertexConsumer, blinkX2, blinkY2, blinkZ2, blinkX2 + 0.1875F, blinkY2 + 0.1875F, blinkZ2 + 0.0001F, facing, isRedLight1Active ? 0xFFFF0000 : 0, MAX_LIGHT_GLOWING);
 			}
 		} else {
 			IDrawing.drawTexture(matrices, vertexConsumer, x, y, z, x + 0.1875F, y + 0.1875F, z + 0.0001F, facing.getOpposite(), color, MAX_LIGHT_GLOWING);

@@ -25,10 +25,10 @@ public class CrossingSignal extends BlockSignalLightBase {
 		super(settings);
 	}
 
-	@Override
-	public BlockState getStateForPlacement(BlockPlaceContext ctx) {
-		return defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite());
-	}
+	//@Override
+	//public BlockState getStateForPlacement(BlockPlaceContext ctx) {
+		//return defaultBlockState().setValue(FACING, ctx.getHorizontalDirection().getOpposite());
+	//}
 
 	@Override
 	public VoxelShape getShape(BlockState blockState, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {

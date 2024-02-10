@@ -70,7 +70,7 @@ public abstract class testrender<T extends BlockEntityMapper> extends BlockEntit
         matrices.translate(0.5, 0, 0.5);
 
         for (int i = 0; i < 2; i++) {
-            final Direction newFacing = (i == 1 ? facing.getOpposite() : facing.getOpposite().getClockWise());
+            final Direction newFacing = (i == 1 ? facing.getOpposite() : facing.getOpposite().getClockWise().getOpposite());
             final int occupiedAspect = getOccupiedAspect(startPos, newFacing.toYRot());
 
             if (occupiedAspect >= 0) {
