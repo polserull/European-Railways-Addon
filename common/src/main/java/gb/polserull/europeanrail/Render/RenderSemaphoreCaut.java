@@ -16,12 +16,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LightLayer;
 
-public class RenderSemaphore<T extends BlockSignalSemaphoreBase.TileEntitySignalSemaphoreBase> extends RenderSignalBase<T> {
+public class RenderSemaphoreCaut<T extends BlockSignalSemaphoreBase.TileEntitySignalSemaphoreBase> extends RenderSignalBase<T> {
 
     private static final int ANGLE = 55;
     private static final int SPEED = 4;
 
-    public RenderSemaphore(BlockEntityRenderDispatcher dispatcher, boolean isSingleSided) {
+    public RenderSemaphoreCaut(BlockEntityRenderDispatcher dispatcher, boolean isSingleSided) {
         super(dispatcher, isSingleSided, 3);
     }
 

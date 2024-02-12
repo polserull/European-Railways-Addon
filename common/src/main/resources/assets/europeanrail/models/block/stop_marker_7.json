@@ -4,7 +4,8 @@
 	"texture_size": [32, 32],
 	"textures": {
 		"1": "europeanrail:block/metal",
-		"2": "europeanrail:block/stop_markers/car_stop_7"
+		"2": "europeanrail:block/stop_markers/car_stop_7",
+		"particle": "mtr:block/metal"
 	},
 	"elements": [
 		{

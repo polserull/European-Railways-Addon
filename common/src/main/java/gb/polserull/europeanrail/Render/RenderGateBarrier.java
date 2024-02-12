@@ -27,7 +27,6 @@ public class RenderGateBarrier<T extends BlockSignalSemaphoreBase.TileEntitySign
     @Override
     protected void render(PoseStack matrices, MultiBufferSource vertexConsumers, VertexConsumer vertexConsumer, T entity, float tickDelta, Direction facing, int occupiedAspect, boolean isBackSide) {
         final float angle = isBackSide ? entity.angle2 : entity.angle1;
-        //IDrawing.drawTexture(matrices, vertexConsumer, -0.0625F, 0.296875F, -0.190625F, 0.0625F, 0.453125F, -0.190625F, facing.getOpposite(), angle < ANGLE / 2F ? 0xFFFFAA00 : 0xFF00FF00, MAX_LIGHT_GLOWING);
         matrices.translate(0.1875, 0.375, 0);
         UtilitiesClient.rotateZDegrees(matrices, 0 - angle);
 
@@ -36,8 +35,8 @@ public class RenderGateBarrier<T extends BlockSignalSemaphoreBase.TileEntitySign
             final BlockPos pos = entity.getBlockPos();
             final VertexConsumer vertexConsumer2 = vertexConsumers.getBuffer(MoreRenderLayers.getExterior(new ResourceLocation("europeanrail:textures/block/gate_crossing.png")));
             final int light = LightTexture.pack(world.getBrightness(LightLayer.BLOCK, pos), world.getBrightness(LightLayer.SKY, pos));
-            IDrawing.drawTexture(matrices, vertexConsumer2, -5F, -0.5F, -0.19375F, 0.295F, 0.5F, -0.19375F, facing.getOpposite(), ARGB_WHITE, light); // x - up
-            //IDrawing.drawTexture(matrices, vertexConsumer2, 0.295F, -0.5F, -0.19375F, -0.705F, 0.5F, -0.19375F, 1, 0, 0, 1, facing.getOpposite(), ARGB_WHITE, light);
+            IDrawing.drawTexture(matrices, vertexConsumer2, -4F, -0.5F, -0.19375F, 0.295F, 0.5F, -0.19375F, facing.getOpposite(), ARGB_WHITE, light);
+            IDrawing.drawTexture(matrices, vertexConsumer2, 0.295F, -0.5F, -0.19375F, -4F, 0.5F, -0.19375F, 1, 0, 0, 1, facing, ARGB_WHITE, light);
         }
 
         final float newAngle;

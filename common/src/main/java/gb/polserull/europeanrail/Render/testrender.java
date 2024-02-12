@@ -70,12 +70,12 @@ public abstract class testrender<T extends BlockEntityMapper> extends BlockEntit
         matrices.translate(0.5, 0, 0.5);
 
         for (int i = 0; i < 2; i++) {
-            final Direction newFacing = (i == 1 ? facing.getOpposite() : facing.getOpposite().getClockWise().getOpposite());
-            final int occupiedAspect = getOccupiedAspect(startPos, newFacing.toYRot());
+            final Direction newFacing = (facing.getOpposite());
+            final int occupiedAspect = getOccupiedAspect(startPos, newFacing.toYRot() + 90);
 
             if (occupiedAspect >= 0) {
                 matrices.pushPose();
-                UtilitiesClient.rotateYDegrees(matrices, -newFacing.toYRot());
+                UtilitiesClient.rotateYDegrees(matrices, newFacing.toYRot() + 90);
                 final VertexConsumer vertexConsumer = vertexConsumers.getBuffer(MoreRenderLayers.getLight(new ResourceLocation("mtr:textures/block/white.png"), false));
                 render(matrices, vertexConsumers, vertexConsumer, entity, tickDelta, newFacing, occupiedAspect, i == 1);
                 // TODO temporary code
