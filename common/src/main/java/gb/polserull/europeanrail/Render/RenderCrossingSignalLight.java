@@ -2,6 +2,7 @@ package gb.polserull.europeanrail.Render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import gb.polserull.europeanrail.MySoundEvents;
 import mtr.client.IDrawing;
 import mtr.mappings.BlockEntityMapper;
 import mtr.mappings.Utilities;
@@ -13,12 +14,17 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.level.block.state.BlockState;
 
+import java.util.Objects;
+import java.util.Timer;
+import java.util.TimerTask;
+
 public class RenderCrossingSignalLight<T extends BlockEntityMapper> extends testrender<T> {
 
+	boolean aspect = false;
 	final boolean redOnTop;
 	final int proceedColor;
 	final int amberColor;
-	private boolean isRedLight1Active;
+	private final boolean isRedLight1Active;
 
 	public RenderCrossingSignalLight(BlockEntityRenderDispatcher dispatcher, boolean isSingleSided, boolean redOnTop, int proceedColor, int amberColor) {
 		super(dispatcher, isSingleSided, 3);
@@ -63,6 +69,8 @@ public class RenderCrossingSignalLight<T extends BlockEntityMapper> extends test
 			float blinkY2 = 0.53F;
 			float blinkZ2 = -0.40F;
 
+			playCrossingSound(entity);
+
 			if (currentTime % 1000 < 500) {
 				IDrawing.drawTexture(matrices, vertexConsumer, blinkX1, blinkY1, blinkZ1, blinkX1 + 0.1875F, blinkY1 + 0.1875F, blinkZ1 + 0.0001F, facing, isRedLight1Active ? 0xFFFF0000 : 0, MAX_LIGHT_GLOWING);
 			} else {
@@ -70,6 +78,26 @@ public class RenderCrossingSignalLight<T extends BlockEntityMapper> extends test
 			}
 		} else {
 			IDrawing.drawTexture(matrices, vertexConsumer, x, y, z, x + 0.1875F, y + 0.1875F, z + 0.0001F, facing.getOpposite(), color, MAX_LIGHT_GLOWING);
+		}
+	}
+
+	// TODO: More Testing
+	private void playCrossingSound(T entity) {
+		java.util.Timer t = new Timer();
+
+		if(aspect) {
+			return;
+		} else {
+			aspect=true;
+			Objects.requireNonNull(entity.getLevel()).playLocalSound(entity.getBlockPos(), MySoundEvents.GATE_CROSSING_SOUND, SoundSource.BLOCKS, 1, 1, false);
+			System.out.println("Crossing Signal Sound Activated!");
+			t.schedule(new TimerTask() {
+				@Override
+				public void run() {
+					aspect=false;
+					System.out.println("Set Aspect To: False!");
+				}
+			}, 8 * 1000);
 		}
 	}
 }

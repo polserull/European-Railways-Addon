@@ -66,9 +66,6 @@ public interface MyBlocks {
     //RegistryObject<Block> BR_TICKET_BARRIER_ENTRANCE = new RegistryObject<>(() -> new BRTicketBarrier(true));
     //RegistryObject<Block> BR_TICKET_BARRIER_EXIT = new RegistryObject<>(() -> new BRTicketBarrier(false));
 
-    //RegistryObject<Block> BR_TICKET_MACHINE = new RegistryObject<>(() -> new BRTicketMachine(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_GRAY).requiresCorrectToolForDrops().strength(2).lightLevel(state -> 5).noOcclusion()));
-
-
     // NYF
     //RegistryObject<Block> SUPPORT_BEAM_OVERHEAD = new RegistryObject<>(() -> new SupportBeamOverhead(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
     //RegistryObject<Block> SUPPORT_BEAM_COLOUM = new RegistryObject<>(() -> new SupportBeamColoum(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));

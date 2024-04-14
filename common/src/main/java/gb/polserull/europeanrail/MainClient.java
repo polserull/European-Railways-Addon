@@ -3,6 +3,7 @@ package gb.polserull.europeanrail;
 import gb.polserull.europeanrail.Render.*;
 import mtr.RegistryClient;
 import mtr.packet.IPacket;
+import net.minecraft.client.Minecraft;
 
 public class MainClient implements IPacket {
 
@@ -19,7 +20,6 @@ public class MainClient implements IPacket {
 		//RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.DOUBLE_BANNER_REPEATER.get(), dispatcher -> new RenderDoubleBannerRepeater<>(dispatcher, true));
 
 		// TICKET SYSTEM
-		//RegistryClient.registerNetworkReceiver(new ResourceLocation(Main.MOD_ID, "packet_open_ticket_machine_screen"), packet -> BRPacketTrainDataGuiClient.openTicketMachineScreen(Minecraft.getInstance(), packet));
 		//RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.BR_TICKET_BARRIER_ENTRANCE.get());
 		//RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.BR_TICKET_BARRIER_EXIT.get());
 		//RegistryClient.registerBlockRenderType(RenderType.cutout(), MyBlocks.BR_TICKET_MACHINE.get());
