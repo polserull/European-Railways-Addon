@@ -1,0 +1,76 @@
+{
+  "custom_signs": {
+    "lner_logo": {
+      "texture_id": "mtr:custom_textures/lner_logo.jpg",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "nr_black": {
+      "texture_id": "mtr:custom_textures/nr_black.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "nr_orange": {
+      "texture_id": "mtr:custom_textures/nr_orange_logo.jpg",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "rssb": {
+      "texture_id": "mtr:custom_textures/rssb_logo.jpg",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "t_express": {
+      "texture_id": "mtr:custom_textures/t_express.png.jpg",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "t_wales": {
+      "texture_id": "mtr:custom_textures/transport_of_wales.jpg",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "t_scot": {
+      "texture_id": "mtr:custom_textures/transport_scotland.jpg",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "wu_si": {
+      "texture_id": "mtr:custom_textures/wu_si.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    },
+    "dutch_nr_logo": {
+      "texture_id": "mtr:custom_textures/nr_logo_dutch.png",
+      "flip_texture": false,
+      "custom_text": "",
+      "flip_custom_text": false,
+      "small": false,
+      "background_color": "ffffff"
+    }
+  }
+}
