@@ -82,14 +82,20 @@ public class RenderCrossingSignalLight<T extends BlockEntityMapper> extends EUSi
 	}
 
 	// TODO: More Testing
+	// TODO: Sound playing far away from player!
 	private void playCrossingSound(T entity) {
+		BlockPos pos = entity.getBlockPos();
 		java.util.Timer t = new Timer();
+
+		double x = pos.getX() + 0.5;
+		double y = pos.getY() + 0.5;
+		double z = pos.getZ() + 0.5;
 
 		if(aspect) {
 			return;
 		} else {
 			aspect=true;
-			Objects.requireNonNull(entity.getLevel()).playLocalSound(entity.getBlockPos(), MySoundEvents.GATE_CROSSING_SOUND, SoundSource.BLOCKS, 1, 1, false);
+			Objects.requireNonNull(entity.getLevel()).playLocalSound(x, y, z, MySoundEvents.GATE_CROSSING_SOUND, SoundSource.BLOCKS, 1, 1, false);
 			System.out.println("Crossing Signal Sound Activated!");
 			t.schedule(new TimerTask() {
 				@Override
