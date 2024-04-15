@@ -42,6 +42,8 @@
   "block.europeanrail.speedboard_arrow_left": "Left Speed Board Indicator",
   "block.europeanrail.speedboard_arrow_right": "Right Speed Board Indicator",
   "block.europeanrail.gate_crossing": "Crossing Barrier",
+  "block.europeanrail.nl_x_indicator": "X Signal",
+  "block.europeanrail.dl_shutdown_board": "Shutdown Board",
   "itemGroup.europeanrail.uk_railways_menu": "UK Railways",
   "itemGroup.europeanrail.dutch_railways_menu": "Dutch Railways",
   "itemGroup.europeanrail.europe_railways_menu": "European Railways"

@@ -2,6 +2,7 @@ package gb.polserull.europeanrail.Render;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
+import mtr.client.ClientData;
 import mtr.client.IDrawing;
 import mtr.render.RenderSignalBase;
 import net.minecraft.client.renderer.MultiBufferSource;

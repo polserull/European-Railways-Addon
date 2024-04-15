@@ -17,8 +17,8 @@ public interface MyBlocks {
     RegistryObject<Block> CAUTION_SEMAPHORE = new RegistryObject<>(() -> new CautionSemaphore(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
     RegistryObject<Block> SHORT_SEMAPHORE = new RegistryObject<>(() -> new ShortSemaphore(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
     RegistryObject<Block> SHUNT_SEMAPHORE = new RegistryObject<>(() -> new ShuntingSemaphore(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
-    RegistryObject<Block> OFF_DISPATCHER_SIGNAL = new RegistryObject<>(() -> new OFFDispatcherSignal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)) {
-    });
+    RegistryObject<Block> OFF_DISPATCHER_SIGNAL = new RegistryObject<>(() -> new OFFDispatcherSignal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
+    RegistryObject<Block> NL_X_INDICATOR = new RegistryObject<>(() -> new NLXSignal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
     //RegistryObject<Block> DOUBLE_BANNER_REPEATER = new RegistryObject<>(() -> new DoubleBannerRepeater(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)) {
     //});
 
@@ -61,6 +61,7 @@ public interface MyBlocks {
     RegistryObject<Block> SPEEDBOARD_ARROW_BOTH = new RegistryObject<>(() -> new ArrowBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
     RegistryObject<Block> SPEEDBOARD_ARROW_LEFT = new RegistryObject<>(() -> new ArrowBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
     RegistryObject<Block> SPEEDBOARD_ARROW_RIGHT = new RegistryObject<>(() -> new ArrowBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
+    RegistryObject<Block> SHUTDOWN_BOARD = new RegistryObject<>(() -> new SignBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
 
     // Ticket Barrier Blocks
     //RegistryObject<Block> BR_TICKET_BARRIER_ENTRANCE = new RegistryObject<>(() -> new BRTicketBarrier(true));

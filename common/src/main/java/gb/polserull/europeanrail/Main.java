@@ -28,6 +28,7 @@ public class Main {
 			registerBlockItem.accept("short_semaphore", MyBlocks.SHORT_SEMAPHORE, MyItems.UK_RAILWAYS);
 			registerBlockItem.accept("shunt_semaphore", MyBlocks.SHUNT_SEMAPHORE, MyItems.UK_RAILWAYS);
 			registerBlockItem.accept("off_dispatch_signal", MyBlocks.OFF_DISPATCHER_SIGNAL, MyItems.UK_RAILWAYS);
+			registerBlockItem.accept("nl_x_indicator", MyBlocks.NL_X_INDICATOR, MyItems.DUTCH_RAILWAYS);
 			//registerBlockItem.accept("double_banner_repeater", MyBlocks.DOUBLE_BANNER_REPEATER, MyItems.UK_RAILWAYS);
 
 			// SPEED BOARDS STANDARD
@@ -69,6 +70,7 @@ public class Main {
 			registerBlockItem.accept("speedboard_arrow_both", MyBlocks.SPEEDBOARD_ARROW_BOTH, MyItems.UK_RAILWAYS);
 			registerBlockItem.accept("speedboard_arrow_left", MyBlocks.SPEEDBOARD_ARROW_LEFT, MyItems.UK_RAILWAYS);
 			registerBlockItem.accept("speedboard_arrow_right", MyBlocks.SPEEDBOARD_ARROW_RIGHT, MyItems.UK_RAILWAYS);
+			registerBlockItem.accept("dl_shutdown_board", MyBlocks.SHUTDOWN_BOARD, MyItems.DUTCH_RAILWAYS);
 
 			// Ticket Barriers
 			//registerBlockItem.accept("ticket_barrier_entrance_1", MyBlocks.BR_TICKET_BARRIER_ENTRANCE, MyItems.UK_RAILWAYS);
@@ -84,6 +86,7 @@ public class Main {
 			registerBlockEntityType.accept("off_dispatch_signal", MyBlockEntityTypes.OFF_DISPATCHER_SIGNAL);
 		    registerBlockEntityType.accept("shunt_semaphore", MyBlockEntityTypes.SHUNT_SEMAPHORE);
 			registerBlockEntityType.accept("gate_crossing", MyBlockEntityTypes.CROSSING_BARRIER);
+			registerBlockEntityType.accept("nl_x_indicator", MyBlockEntityTypes.NL_X_INDICATOR);
 		    //registerBlockEntityType.accept("double_banner_repeater", MyBlockEntityTypes.DOUBLE_BANNER_REPEATER);
 	}
 

@@ -14,5 +14,6 @@ public interface MyBlockEntityTypes {
     RegistryObject<BlockEntityType<OFFDispatcherSignal.TileEntityTheatreSignalDoubleLetter1>> OFF_DISPATCHER_SIGNAL = new RegistryObject<>(() -> RegistryUtilities.getBlockEntityType(OFFDispatcherSignal.TileEntityTheatreSignalDoubleLetter1::new, MyBlocks.OFF_DISPATCHER_SIGNAL.get()));
     //RegistryObject<BlockEntityType<DoubleBannerRepeater.TileEntityTheatreSignalDoubleLetter1>> DOUBLE_BANNER_REPEATER = new RegistryObject<>(() -> RegistryUtilities.getBlockEntityType(DoubleBannerRepeater.TileEntityTheatreSignalDoubleLetter1::new, MyBlocks.DOUBLE_BANNER_REPEATER.get()));
     RegistryObject<BlockEntityType<CrossingBarrier.TileEntitySignalCrossingBarrier>> CROSSING_BARRIER = new RegistryObject<>(() -> RegistryUtilities.getBlockEntityType(CrossingBarrier.TileEntitySignalCrossingBarrier::new, MyBlocks.CROSSING_BARRIER.get()));
+    RegistryObject<BlockEntityType<NLXSignal.TileEntityXSignal>> NL_X_INDICATOR = new RegistryObject<>(() -> RegistryUtilities.getBlockEntityType(NLXSignal.TileEntityXSignal::new, MyBlocks.NL_X_INDICATOR.get()));
 }
 
