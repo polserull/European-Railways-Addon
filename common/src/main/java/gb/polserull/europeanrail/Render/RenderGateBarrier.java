@@ -15,7 +15,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.LightLayer;
 
-public class RenderGateBarrier<T extends BlockSignalSemaphoreBase.TileEntitySignalSemaphoreBase> extends testrender<T> {
+public class RenderGateBarrier<T extends BlockSignalSemaphoreBase.TileEntitySignalSemaphoreBase> extends EUSignalRender<T> {
 
     private static final int ANGLE = 90;
     private static final int SPEED = 4;

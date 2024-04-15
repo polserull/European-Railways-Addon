@@ -27,12 +27,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import java.util.HashMap;
 import java.util.Map;
 
-public abstract class testrender<T extends BlockEntityMapper> extends BlockEntityRendererMapper<T> implements IBlock, IGui {
+public abstract class EUSignalRender<T extends BlockEntityMapper> extends BlockEntityRendererMapper<T> implements IBlock, IGui {
 
     protected final boolean isSingleSided;
     protected final int aspects;
 
-    public testrender(BlockEntityRenderDispatcher dispatcher, boolean isSingleSided, int aspects) {
+    public EUSignalRender(BlockEntityRenderDispatcher dispatcher, boolean isSingleSided, int aspects) {
         super(dispatcher);
         this.isSingleSided = isSingleSided;
         this.aspects = aspects;
@@ -40,7 +40,7 @@ public abstract class testrender<T extends BlockEntityMapper> extends BlockEntit
 
     // TODO backwards compatibility
     @Deprecated
-    public testrender(BlockEntityRenderDispatcher dispatcher, boolean isSingleSided) {
+    public EUSignalRender(BlockEntityRenderDispatcher dispatcher, boolean isSingleSided) {
         this(dispatcher, isSingleSided, 2);
     }
 

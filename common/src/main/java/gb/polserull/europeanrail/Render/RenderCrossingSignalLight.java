@@ -18,7 +18,7 @@ import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class RenderCrossingSignalLight<T extends BlockEntityMapper> extends testrender<T> {
+public class RenderCrossingSignalLight<T extends BlockEntityMapper> extends EUSignalRender<T> {
 
 	boolean aspect = false;
 	final boolean redOnTop;
