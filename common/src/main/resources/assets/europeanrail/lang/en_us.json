@@ -44,6 +44,8 @@
   "block.europeanrail.gate_crossing": "Crossing Barrier",
   "block.europeanrail.nl_x_indicator": "X Signal",
   "block.europeanrail.dl_shutdown_board": "Shutdown Board",
+  "block.europeanrail.signal_type_sign_auto": "Auto Signal Sign",
+  "block.europeanrail.uk_train_pid": "Train Info PID",
   "itemGroup.europeanrail.uk_railways_menu": "UK Railways",
   "itemGroup.europeanrail.dutch_railways_menu": "Dutch Railways",
   "itemGroup.europeanrail.europe_railways_menu": "European Railways"

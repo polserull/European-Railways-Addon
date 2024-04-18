@@ -7,10 +7,10 @@ issueTrackerURL="https://github.com/polserull/European-Railways-Addon/issues"
 modId = "europeanrail"
 version = "${version}"
 displayName = "European Railways Addon"
-displayURL = "https://modrinth.com/mod/european-railways-addon"
+displayURL = "https://polserull.xyz/"
 
 authors = "[Creator] pølserull, [Support] szandorthe13th"
-description = "A MTR Addon thats various blocks and mechanics from european railways!"
+description = "An MTR Addon that adds various blocks and signals from European Railways!"
 logoFile = "icon.png"
 
 displayTest = "IGNORE_ALL_VERSION"

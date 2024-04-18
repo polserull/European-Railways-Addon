@@ -62,15 +62,8 @@ public interface MyBlocks {
     RegistryObject<Block> SPEEDBOARD_ARROW_LEFT = new RegistryObject<>(() -> new ArrowBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
     RegistryObject<Block> SPEEDBOARD_ARROW_RIGHT = new RegistryObject<>(() -> new ArrowBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
     RegistryObject<Block> SHUTDOWN_BOARD = new RegistryObject<>(() -> new SignBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
-
-    // Ticket Barrier Blocks
-    //RegistryObject<Block> BR_TICKET_BARRIER_ENTRANCE = new RegistryObject<>(() -> new BRTicketBarrier(true));
-    //RegistryObject<Block> BR_TICKET_BARRIER_EXIT = new RegistryObject<>(() -> new BRTicketBarrier(false));
+    RegistryObject<Block> AUTO_SIGNAL_SIGN = new RegistryObject<>(() -> new AutoSignalSign(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
 
     // NYF
-    //RegistryObject<Block> SUPPORT_BEAM_OVERHEAD = new RegistryObject<>(() -> new SupportBeamOverhead(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
-    //RegistryObject<Block> SUPPORT_BEAM_COLOUM = new RegistryObject<>(() -> new SupportBeamColoum(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));
-    //RegistryObject<Block> OFF_DISPATCHER_SIGNAL = new RegistryObject<>(() -> new OFFDispatcherSignal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
     RegistryObject<Block> CROSSING_BARRIER = new RegistryObject<>(() -> new CrossingBarrier(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
-
 }

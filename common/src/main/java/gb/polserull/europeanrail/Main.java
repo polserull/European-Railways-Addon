@@ -70,12 +70,8 @@ public class Main {
 			registerBlockItem.accept("speedboard_arrow_both", MyBlocks.SPEEDBOARD_ARROW_BOTH, MyItems.UK_RAILWAYS);
 			registerBlockItem.accept("speedboard_arrow_left", MyBlocks.SPEEDBOARD_ARROW_LEFT, MyItems.UK_RAILWAYS);
 			registerBlockItem.accept("speedboard_arrow_right", MyBlocks.SPEEDBOARD_ARROW_RIGHT, MyItems.UK_RAILWAYS);
+			registerBlockItem.accept("signal_type_sign_auto", MyBlocks.AUTO_SIGNAL_SIGN, MyItems.UK_RAILWAYS);
 			registerBlockItem.accept("dl_shutdown_board", MyBlocks.SHUTDOWN_BOARD, MyItems.DUTCH_RAILWAYS);
-
-			// Ticket Barriers
-			//registerBlockItem.accept("ticket_barrier_entrance_1", MyBlocks.BR_TICKET_BARRIER_ENTRANCE, MyItems.UK_RAILWAYS);
-			//registerBlockItem.accept("ticket_barrier_exit_1", MyBlocks.BR_TICKET_BARRIER_EXIT, MyItems.UK_RAILWAYS);
-			//registerBlockItem.accept("ticket_machine", MyBlocks.BR_TICKET_MACHINE, MyItems.UK_RAILWAYS);
 
 			// Register Entity
 		    registerBlockEntityType.accept("shunt_signal", MyBlockEntityTypes.SHUNT_SIGNAL);
@@ -87,7 +83,6 @@ public class Main {
 		    registerBlockEntityType.accept("shunt_semaphore", MyBlockEntityTypes.SHUNT_SEMAPHORE);
 			registerBlockEntityType.accept("gate_crossing", MyBlockEntityTypes.CROSSING_BARRIER);
 			registerBlockEntityType.accept("nl_x_indicator", MyBlockEntityTypes.NL_X_INDICATOR);
-		    //registerBlockEntityType.accept("double_banner_repeater", MyBlockEntityTypes.DOUBLE_BANNER_REPEATER);
 	}
 
 	@FunctionalInterface

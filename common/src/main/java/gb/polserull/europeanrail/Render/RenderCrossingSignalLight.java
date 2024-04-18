@@ -69,7 +69,7 @@ public class RenderCrossingSignalLight<T extends BlockEntityMapper> extends EUSi
 			float blinkY2 = 0.53F;
 			float blinkZ2 = -0.40F;
 
-			playCrossingSound(entity);
+			//playCrossingSound(entity);
 
 			if (currentTime % 1000 < 500) {
 				IDrawing.drawTexture(matrices, vertexConsumer, blinkX1, blinkY1, blinkZ1, blinkX1 + 0.1875F, blinkY1 + 0.1875F, blinkZ1 + 0.0001F, facing, isRedLight1Active ? 0xFFFF0000 : 0, MAX_LIGHT_GLOWING);

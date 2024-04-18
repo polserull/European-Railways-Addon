@@ -5,7 +5,7 @@
 				"facing": "north"
 			},
 			"apply": {
-				"model": "europeanrail:block/pole_spacers/pole_spacer_two"
+				"model": "europeanrail:block/signal_type_sign_auto"
 			}
 		},
 		{
@@ -13,7 +13,7 @@
 				"facing": "east"
 			},
 			"apply": {
-				"model": "europeanrail:block/pole_spacers/pole_spacer_two",
+				"model": "europeanrail:block/signal_type_sign_auto",
 				"y": 90
 			}
 		},
@@ -22,7 +22,7 @@
 				"facing": "south"
 			},
 			"apply": {
-				"model": "europeanrail:block/pole_spacers/pole_spacer_two",
+				"model": "europeanrail:block/signal_type_sign_auto",
 				"y": 180
 			}
 		},
@@ -31,7 +31,7 @@
 				"facing": "west"
 			},
 			"apply": {
-				"model": "europeanrail:block/pole_spacers/pole_spacer_two",
+				"model": "europeanrail:block/signal_type_sign_auto",
 				"y": 270
 			}
 		}

@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "europeanrail:block/uk_train_pid" },
+    "facing=east": { "model": "europeanrail:block/uk_train_pid", "y": 90 },
+    "facing=south": { "model": "europeanrail:block/uk_train_pid", "y": 180 },
+    "facing=west": { "model": "europeanrail:block/uk_train_pid", "y": 270 }
+  }
+}

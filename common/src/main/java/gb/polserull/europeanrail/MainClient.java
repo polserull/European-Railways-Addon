@@ -16,6 +16,5 @@ public class MainClient implements IPacket {
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.LIMIT_OF_SHUNT_SIGNAL.get(), dispatcher -> new RenderLimitOfShuntSignalLight<>(dispatcher, true, false, 0xFF00FF00));
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.CROSSING_BARRIER.get(), dispatcher -> new RenderGateBarrier<>(dispatcher, true));
 		RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.NL_X_INDICATOR.get(), dispatcher -> new RenderNLXSignal<>(dispatcher, true));
-		//RegistryClient.registerTileEntityRenderer(MyBlockEntityTypes.DOUBLE_BANNER_REPEATER.get(), dispatcher -> new RenderDoubleBannerRepeater<>(dispatcher, true));
 	}
 }

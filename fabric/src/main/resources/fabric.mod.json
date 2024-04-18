@@ -3,18 +3,14 @@
 	"id": "europeanrail",
 	"version": "${version}",
 	"name": "European Railways Addon",
-	"description": "A MTR Addon thats various blocks and mechanics from european railways!",
+	"description": "An MTR Addon that adds various blocks and signals from European Railways!",
 	"authors": [
 		"[Creator] pølserull",
 		"[Support] szandorthe13th"
 	],
 	"contact": {
-		"homepage": "https://modrinth.com/mod/european-railways-addon",
-		"sources": "https://github.com/polserull/European-Railways-Addon",
-		"modmenu.discord": "https://discord.gg/aDcy5nPJx5",
-		"modmenu.kofi": "https://ko-fi.com/polserull",
-		"modmenu.wiki": "https://github.com/polserull/European-Railways-Addon/wiki",
-		"modmenu.twitter": "https://twitter.com/_polserull"
+		"homepage": "https://polserull.xyz/",
+		"sources": "https://github.com/polserull/European-Railways-Addon"
 	},
 	"license": "MIT",
 	"icon": "icon.png",
