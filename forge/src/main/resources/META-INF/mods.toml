@@ -9,7 +9,7 @@ version = "${version}"
 displayName = "European Railways Addon"
 displayURL = "https://polserull.xyz/"
 
-authors = "[Creator] pølserull, [Support] szandorthe13th"
+authors = "[Creator] pølserull, [Support] szandorthe13th, [Support] balazskis"
 description = "An MTR Addon that adds various blocks and signals from European Railways!"
 logoFile = "icon.png"
 
