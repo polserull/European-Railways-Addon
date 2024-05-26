@@ -2,41 +2,41 @@ modLoader = "javafml"
 loaderVersion = "[36,)"
 license = "MIT"
 issueTrackerURL="https://github.com/polserull/European-Railways-Addon/issues"
+showAsResourcePack=false
 
 [[mods]]
 modId = "europeanrail"
 version = "${version}"
 displayName = "European Railways Addon"
-displayURL = "https://polserull.xyz/"
-
-authors = "[Creator] pølserull, [Support] szandorthe13th, [Support] balazskis"
+displayURL = "https://modrinth.com/mod/european-railways-addon"
+authors = "[Creator] pølserull, [Support] szandorthe13th"
+credits = "[Translation] Balazskis, [Translation] JustNoone, [Translation] Pyrothedreg, [Translation] Dave_2911_"
 description = "An MTR Addon that adds various blocks and signals from European Railways!"
 logoFile = "icon.png"
-
 displayTest = "IGNORE_ALL_VERSION"
 
-[[dependencies.britishrail]]
+[[dependencies.europeanrail]]
 modId = "forge"
 mandatory = true
 versionRange = "[36,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.britishrail]]
+[[dependencies.europeanrail]]
 modId = "minecraft"
 mandatory = true
 versionRange = "[1.16.5,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.britishrail]]
+[[dependencies.europeanrail]]
 modId = "architectury"
 mandatory = true
 versionRange = "[1.26.37,)"
 ordering = "AFTER"
 side = "BOTH"
 
-[[dependencies.britishrail]]
+[[dependencies.europeanrail]]
 modId = "mtr"
 mandatory = true
 versionRange = "1.0"

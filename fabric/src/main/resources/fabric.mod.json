@@ -6,11 +6,17 @@
 	"description": "An MTR Addon that adds various blocks and signals from European Railways!",
 	"authors": [
 		"[Creator] pølserull",
-		"[Support] szandorthe13th",
-		"[Support] balazskis"
+		"[Support] szandorthe13th"
 	],
+	"contributors": [
+		"[Translation] balazskis",
+		"[Translation] JustNoone",
+		"[Translation] Pyrothedreg",
+		"[Translation] Dave_2911_"
+    ],
 	"contact": {
-		"homepage": "https://polserull.xyz/",
+		"homepage": "https://modrinth.com/mod/european-railways-addon",
+		"issues": "https://github.com/polserull/European-Railways-Addon/issues",
 		"sources": "https://github.com/polserull/European-Railways-Addon"
 	},
 	"license": "MIT",

@@ -3,6 +3,8 @@
 # certain platforms or Java versions, and provides a first line of defence
 # against bad commits.
 
+# TODO: Upgrade to v4 artifact
+
 name: Build
 on: [ pull_request, push ]
 
