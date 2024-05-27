@@ -19,8 +19,7 @@ public interface MyBlocks {
     RegistryObject<Block> SHUNT_SEMAPHORE = new RegistryObject<>(() -> new ShuntingSemaphore(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
     RegistryObject<Block> OFF_DISPATCHER_SIGNAL = new RegistryObject<>(() -> new OFFDispatcherSignal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
     RegistryObject<Block> NL_X_INDICATOR = new RegistryObject<>(() -> new NLXSignal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
-    //RegistryObject<Block> DOUBLE_BANNER_REPEATER = new RegistryObject<>(() -> new DoubleBannerRepeater(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)) {
-    //});
+    RegistryObject<Block> GANTRY_SIGNAL_TWO = new RegistryObject<>(() -> new GantrySignal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
 
     // Speed Boards
     RegistryObject<Block> SPEED_BOARD_FIVE = new RegistryObject<>(() -> new SignBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));

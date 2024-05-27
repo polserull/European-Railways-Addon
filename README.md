@@ -1,5 +1,6 @@
 # European Railway Addon
 
+![banner](https://github.com/polserull/European-Railways-Addon/assets/88738134/ded1f36d-c685-4ee3-9537-ba984b5d7440)
 
 ## Setup
 
