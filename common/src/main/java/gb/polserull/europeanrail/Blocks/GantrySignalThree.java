@@ -3,20 +3,15 @@ package gb.polserull.europeanrail.Blocks;
 import gb.polserull.europeanrail.MyBlockEntityTypes;
 import mtr.block.BlockSignalLightBase;
 import mtr.block.IBlock;
-import mtr.mappings.BlockDirectionalMapper;
 import net.minecraft.core.BlockPos;
-import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import org.jetbrains.annotations.Nullable;
 
-public class GantrySignal extends BlockSignalLightBase {
-    public GantrySignal(Properties settings) {
+public class GantrySignalThree extends BlockSignalLightBase {
+    public GantrySignalThree(Properties settings) {
         super(settings, 2, 14);
     }
 
@@ -28,12 +23,12 @@ public class GantrySignal extends BlockSignalLightBase {
 
     @Override
     public mtr.mappings.BlockEntityMapper createBlockEntity(BlockPos pos, BlockState state) {
-        return new GantrySignal.TileEntityGantrySignal(pos, state);
+        return new GantrySignalThree.TileEntityGantryThreeSignal(pos, state);
     }
 
-    public static class TileEntityGantrySignal extends mtr.mappings.BlockEntityMapper {
-        public TileEntityGantrySignal(BlockPos pos, BlockState state) {
-            super(MyBlockEntityTypes.GANTRY_SIGNAL_TWO.get(), pos, state);
+    public static class TileEntityGantryThreeSignal extends mtr.mappings.BlockEntityMapper {
+        public TileEntityGantryThreeSignal(BlockPos pos, BlockState state) {
+            super(MyBlockEntityTypes.GANTRY_SIGNAL_THREE.get(), pos, state);
         }
     }
 }

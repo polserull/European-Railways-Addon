@@ -3,6 +3,8 @@
   "block.europeanrail.shunt_signal": "Rangiersignal",
   "block.europeanrail.limit_of_shunt_signal": "Grenze des Shunt-Signals",
   "block.europeanrail.off_dispatch_signal": "AUS Versandsignal",
+  "block.europeanrail.signal_gantry_two": "Gantry Signal Aspect Two",
+  "block.europeanrail.signal_gantry_three": "Gantry Signal Aspect Three",
   "block.europeanrail.double_banner_repeater": "Doppelbanner-Repeater-Signal",
   "block.europeanrail.shunt_semaphore": "Shunt Semaphor",
   "block.europeanrail.speed_board_eighty": "80MPH Geschwindigkeitsanzeigetafeln",
@@ -44,5 +46,9 @@
   "block.europeanrail.gate_crossing": "Crossing Barrier",
   "itemGroup.europeanrail.uk_railways_menu": "UK Railways",
   "itemGroup.europeanrail.dutch_railways_menu": "Dutch Railways",
-  "itemGroup.europeanrail.europe_railways_menu": "European Railways"
+  "itemGroup.europeanrail.era_menu": "European Railways",
+  "block.europeanrail.nl_x_indicator": "X Signal",
+  "block.europeanrail.dl_shutdown_board": "Shutdown Board",
+  "block.europeanrail.signal_type_sign_auto": "Auto Signal Sign",
+  "block.europeanrail.uk_train_pid": "Train Info PID"
 }

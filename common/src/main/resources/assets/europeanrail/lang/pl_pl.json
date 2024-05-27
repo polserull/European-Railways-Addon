@@ -3,6 +3,8 @@
   "block.europeanrail.shunt_signal": "Sygnał manewrowy",
   "block.europeanrail.limit_of_shunt_signal": "Limit sygnału manewrowego",
   "block.europeanrail.off_dispatch_signal": "Sygnał OFF",
+  "block.europeanrail.signal_gantry_two": "Gantry Signal Aspect Two",
+  "block.europeanrail.signal_gantry_three": "Gantry Signal Aspect Three",
   "block.europeanrail.double_banner_repeater": "Sygnał podwójny powtórny",
   "block.europeanrail.shunt_semaphore": "Semafor manewrowy",
   "block.europeanrail.speed_board_eighty": "Tablica prędkości 80MPH",
@@ -48,5 +50,5 @@
   "block.europeanrail.uk_train_pid": "Wyświetlacz informacji pasażerskiej o pociągu",
   "itemGroup.europeanrail.uk_railways_menu": "Koleje angielskie",
   "itemGroup.europeanrail.dutch_railways_menu": "Koleje niderlandskie",
-  "itemGroup.europeanrail.europe_railways_menu": "Koleje europejskie"
+  "itemGroup.europeanrail.era_menu": "Koleje europejskie"
 }

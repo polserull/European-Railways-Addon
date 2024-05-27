@@ -29,7 +29,8 @@ public class Main {
 			registerBlockItem.accept("shunt_semaphore", MyBlocks.SHUNT_SEMAPHORE, MyItems.UK_RAILWAYS);
 			registerBlockItem.accept("off_dispatch_signal", MyBlocks.OFF_DISPATCHER_SIGNAL, MyItems.UK_RAILWAYS);
 			registerBlockItem.accept("nl_x_indicator", MyBlocks.NL_X_INDICATOR, MyItems.DUTCH_RAILWAYS);
-			registerBlockItem.accept("signal_gantry_two", MyBlocks.GANTRY_SIGNAL_TWO, MyItems.UK_RAILWAYS);
+			registerBlockItem.accept("signal_gantry_two", MyBlocks.GANTRY_SIGNAL_TWO, MyItems.EUROPEAN_RAILWAYS_ADDON);
+			registerBlockItem.accept("signal_gantry_three", MyBlocks.GANTRY_SIGNAL_THREE, MyItems.EUROPEAN_RAILWAYS_ADDON);
 
 			// SPEED BOARDS STANDARD
 			registerBlockItem.accept("speed_board_five", MyBlocks.SPEED_BOARD_FIVE, MyItems.UK_RAILWAYS);
@@ -83,6 +84,8 @@ public class Main {
 		    registerBlockEntityType.accept("shunt_semaphore", MyBlockEntityTypes.SHUNT_SEMAPHORE);
 			registerBlockEntityType.accept("gate_crossing", MyBlockEntityTypes.CROSSING_BARRIER);
 			registerBlockEntityType.accept("nl_x_indicator", MyBlockEntityTypes.NL_X_INDICATOR);
+			registerBlockEntityType.accept("signal_gantry_two", MyBlockEntityTypes.GANTRY_SIGNAL_TWO);
+			registerBlockEntityType.accept("signal_gantry_three", MyBlockEntityTypes.GANTRY_SIGNAL_THREE);
 	}
 
 	@FunctionalInterface

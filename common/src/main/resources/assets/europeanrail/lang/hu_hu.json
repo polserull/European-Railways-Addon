@@ -3,6 +3,8 @@
   "block.europeanrail.shunt_signal": "Haladási jelzés",
   "block.europeanrail.limit_of_shunt_signal": "Haladás határa",
   "block.europeanrail.off_dispatch_signal": "Indulásjelző",
+  "block.europeanrail.signal_gantry_two": "Gantry Signal Aspect Two",
+  "block.europeanrail.signal_gantry_three": "Gantry Signal Aspect Three",
   "block.europeanrail.double_banner_repeater": "Duplazászlós-ismétlőjelzés",
   "block.europeanrail.shunt_semaphore": "Haladási szemafor",
   "block.europeanrail.speed_board_eighty": "80MPH Sebességjelző-tábla",
@@ -44,5 +46,5 @@
   "block.europeanrail.gate_crossing": "átkelő jelzőtábla",
   "itemGroup.europeanrail.uk_railways_menu": "Brit Vasutak",
   "itemGroup.europeanrail.dutch_railways_menu": "Holland Vasutak",
-  "itemGroup.europeanrail.europe_railways_menu": "Európai Vasutak"
+  "itemGroup.europeanrail.era_menu": "Európai Vasutak"
 }

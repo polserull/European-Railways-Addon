@@ -20,6 +20,7 @@ public interface MyBlocks {
     RegistryObject<Block> OFF_DISPATCHER_SIGNAL = new RegistryObject<>(() -> new OFFDispatcherSignal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
     RegistryObject<Block> NL_X_INDICATOR = new RegistryObject<>(() -> new NLXSignal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
     RegistryObject<Block> GANTRY_SIGNAL_TWO = new RegistryObject<>(() -> new GantrySignal(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
+    RegistryObject<Block> GANTRY_SIGNAL_THREE = new RegistryObject<>(() -> new GantrySignalThree(BlockBehaviour.Properties.of(Material.METAL, MaterialColor.COLOR_BLACK).strength(4)));
 
     // Speed Boards
     RegistryObject<Block> SPEED_BOARD_FIVE = new RegistryObject<>(() -> new SignBoard(BlockBehaviour.Properties.of(Material.METAL).requiresCorrectToolForDrops().strength(1)));

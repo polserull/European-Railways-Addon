@@ -3,6 +3,8 @@
   "block.europeanrail.shunt_signal": "Rangeersein",
   "block.europeanrail.limit_of_shunt_signal": "Rangeerstopsein",
   "block.europeanrail.off_dispatch_signal": "OFF Vertreklicht",
+  "block.europeanrail.signal_gantry_two": "Gantry Signal Aspect Two",
+  "block.europeanrail.signal_gantry_three": "Gantry Signal Aspect Three",
   "block.europeanrail.double_banner_repeater": "Dubbel Herhaalsein",
   "block.europeanrail.shunt_semaphore": "Rangeerarmsein",
   "block.europeanrail.speed_board_eighty": "Snelheidsbord 80mpu",
@@ -48,5 +50,5 @@
   "block.europeanrail.uk_train_pid": "Brits Perronbord",
   "itemGroup.europeanrail.uk_railways_menu": "Britse Spoorwegen",
   "itemGroup.europeanrail.dutch_railways_menu": "Nederlandse Spoorwegen",
-  "itemGroup.europeanrail.europe_railways_menu": "Europese Spoorwegen"
+  "itemGroup.europeanrail.era_menu": "Europese Spoorwegen"
 }

@@ -3,6 +3,8 @@
   "block.europeanrail.shunt_signal": "Posunovací signál",
   "block.europeanrail.limit_of_shunt_signal": "Limit posunovacího signálu",
   "block.europeanrail.off_dispatch_signal": "Signál OFF",
+  "block.europeanrail.signal_gantry_two": "Gantry Signal Aspect Two",
+  "block.europeanrail.signal_gantry_three": "Gantry Signal Aspect Three",
   "block.europeanrail.double_banner_repeater": "Dvojitý signál opakovače",
   "block.europeanrail.shunt_semaphore": "Posunovací návěstidlo",
   "block.europeanrail.speed_board_eighty": "Značka rychlosti 80MPH",

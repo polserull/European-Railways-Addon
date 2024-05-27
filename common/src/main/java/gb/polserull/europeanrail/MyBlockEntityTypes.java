@@ -15,5 +15,7 @@ public interface MyBlockEntityTypes {
     RegistryObject<BlockEntityType<OFFDispatcherSignal.TileEntityTheatreSignalDoubleLetter1>> OFF_DISPATCHER_SIGNAL = new RegistryObject<>(() -> RegistryUtilities.getBlockEntityType(OFFDispatcherSignal.TileEntityTheatreSignalDoubleLetter1::new, MyBlocks.OFF_DISPATCHER_SIGNAL.get()));
     RegistryObject<BlockEntityType<CrossingBarrier.TileEntitySignalCrossingBarrier>> CROSSING_BARRIER = new RegistryObject<>(() -> RegistryUtilities.getBlockEntityType(CrossingBarrier.TileEntitySignalCrossingBarrier::new, MyBlocks.CROSSING_BARRIER.get()));
     RegistryObject<BlockEntityType<NLXSignal.TileEntityXSignal>> NL_X_INDICATOR = new RegistryObject<>(() -> RegistryUtilities.getBlockEntityType(NLXSignal.TileEntityXSignal::new, MyBlocks.NL_X_INDICATOR.get()));
+    RegistryObject<BlockEntityType<GantrySignal.TileEntityGantrySignal>> GANTRY_SIGNAL_TWO = new RegistryObject<>(() -> RegistryUtilities.getBlockEntityType(GantrySignal.TileEntityGantrySignal::new, MyBlocks.GANTRY_SIGNAL_TWO.get()));
+    RegistryObject<BlockEntityType<GantrySignalThree.TileEntityGantryThreeSignal>> GANTRY_SIGNAL_THREE = new RegistryObject<>(() -> RegistryUtilities.getBlockEntityType(GantrySignalThree.TileEntityGantryThreeSignal::new, MyBlocks.GANTRY_SIGNAL_THREE.get()));
 }
 

@@ -3,6 +3,8 @@
   "block.europeanrail.shunt_signal": "Shunting Signal",
   "block.europeanrail.limit_of_shunt_signal": "Limit Of Shunt Signal",
   "block.europeanrail.off_dispatch_signal": "OFF Dispatch Signal",
+  "block.europeanrail.signal_gantry_two": "Gantry Signal Aspect Two",
+  "block.europeanrail.signal_gantry_three": "Gantry Signal Aspect Three",
   "block.europeanrail.double_banner_repeater": "Double Banner Repeater Signal",
   "block.europeanrail.shunt_semaphore": "Shunt Semaphore",
   "block.europeanrail.speed_board_eighty": "80MPH Speed Board",
@@ -48,5 +50,5 @@
   "block.europeanrail.uk_train_pid": "Train Info PID",
   "itemGroup.europeanrail.uk_railways_menu": "UK Railways",
   "itemGroup.europeanrail.dutch_railways_menu": "Dutch Railways",
-  "itemGroup.europeanrail.europe_railways_menu": "European Railways"
+  "itemGroup.europeanrail.era_menu": "European Railways"
 }
