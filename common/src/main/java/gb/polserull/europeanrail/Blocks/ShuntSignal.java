@@ -26,7 +26,7 @@ public class ShuntSignal extends BlockSignalLightBase {
 	@Override
 	public VoxelShape getShape(BlockState state, BlockGetter blockGetter, BlockPos pos, CollisionContext collisionContext) {
 		VoxelShape i1 =  IBlock.getVoxelShapeByDirection(6, 0, 6, 10, 16, 10, IBlock.getStatePropertySafe(state, FACING));
-		VoxelShape i2 =  IBlock.getVoxelShapeByDirection(1, 2, 10, 15, 14, 14, IBlock.getStatePropertySafe(state, FACING));
+		VoxelShape i2 =  IBlock.getVoxelShapeByDirection(4, 4, 10, 13, 14, 14, IBlock.getStatePropertySafe(state, FACING));
 		return Shapes.or(i1, i2);
 	}
 
